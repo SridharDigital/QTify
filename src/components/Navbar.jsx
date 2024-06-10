@@ -9,7 +9,7 @@ const Navbar = () => {
         <Logo />
         <Search />
         <button className="h-11 bg-dark py-[10px] px-4 rounded-xl text-primary font-bold">
-          GIVE FEEDBACK
+          Give Feedback
         </button>
       </div>
     </div>
