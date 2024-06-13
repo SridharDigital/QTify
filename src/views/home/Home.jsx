@@ -3,8 +3,8 @@ import Navbar from "../../components/Navbar";
 import Hero from "./Hero";
 import Collection from "../../components/Collection";
 
-const url = "https://qtify-backend-labs.crio.do/albums/top";
-const categoryTitle = "Top Albums";
+const topAlbumURL = "https://qtify-backend-labs.crio.do/albums/top";
+const newAlbumURL = "https://qtify-backend-labs.crio.do/albums/new";
 
 const Home = () => {
   return (
@@ -12,7 +12,8 @@ const Home = () => {
       <Navbar />
       <div className="max-w-[1400px] m-auto">
         <Hero />
-        <Collection url={url} categoryTitle={categoryTitle} />
+        <Collection url={topAlbumURL} categoryTitle="Top Albums" />
+        <Collection url={newAlbumURL} categoryTitle="New Albums" />
       </div>
     </div>
   );

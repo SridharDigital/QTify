@@ -24,7 +24,7 @@ const Collection = ({ url, categoryTitle }) => {
   };
 
   return (
-    <div className="">
+    <div className="my-6">
       <div className="flex text-light justify-between mb-6 font-semibold text-xl">
         <p>{categoryTitle}</p>
         <button className="text-primary">Collapse</button>
