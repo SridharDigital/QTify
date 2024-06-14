@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff; /* Change button icon color */
+  background-color: var(--primary);
+  padding: 20px;
+  border-radius: 32px;
+  font-size: 6px;
+  --swiper-navigation-size: 26px;
+  top: 35%;
+}
+
+.hidden {
+  opacity: 0.5;
+  transform: scale(0.95);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.visible {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s, transform 0.5s;
+}
