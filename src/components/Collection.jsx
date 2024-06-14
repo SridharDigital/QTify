@@ -10,7 +10,6 @@ const Collection = ({ url, categoryTitle }) => {
   useEffect(() => {
     (async () => {
       const albums = await fetchAlbums();
-      console.log({ albums });
       setAlbums(albums);
     })();
   }, []);
@@ -18,7 +17,6 @@ const Collection = ({ url, categoryTitle }) => {
   const fetchAlbums = async () => {
     try {
       const response = await axios.get(url);
-      console.log(response.data);
       return response.data;
     } catch (error) {
       console.log(error);
@@ -47,7 +45,8 @@ const Collection = ({ url, categoryTitle }) => {
               key={album.id}
               image={album.image}
               title={album.title}
-              likes={album.follows}
+              likes={album.likes}
+              follows={album.follows}
               id={album.id}
               toolTipValue={album.songs.length}
             />

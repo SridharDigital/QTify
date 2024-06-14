@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import MusicCard from "./MusicCard";
 
 const Carousel = ({ albums }) => {
+  console.log({ albums });
   return (
     <div>
       <Swiper
@@ -21,9 +22,10 @@ const Carousel = ({ albums }) => {
               key={album.id}
               image={album.image}
               title={album.title}
-              likes={album.follows}
+              likes={album.likes}
+              follows={album.follows}
               id={album.id}
-              toolTipValue={album.songs.length}
+              toolTipValue={album?.songs?.length}
             />
           </SwiperSlide>
         ))}
