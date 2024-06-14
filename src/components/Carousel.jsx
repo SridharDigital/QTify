@@ -23,6 +23,7 @@ const Carousel = ({ albums }) => {
               title={album.title}
               likes={album.follows}
               id={album.id}
+              toolTipValue={album.songs.length}
             />
           </SwiperSlide>
         ))}
